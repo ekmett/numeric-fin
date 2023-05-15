@@ -9,7 +9,7 @@ maintainer:    Edward A. Kmett <ekmett@gmail.com>
 stability:     provisional
 homepage:      http://github.com/ekmett/distributive/
 bug-reports:   http://github.com/ekmett/distributive/issues
-copyright:     Copyright 2021 Edward A. Kmett,
+copyright:     Copyright 2021-2023 Edward A. Kmett,
 synopsis:      efficient small finite numbers
 description:   efficient small finite numbers.
 

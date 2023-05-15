@@ -23,7 +23,7 @@
 {-# options_haddock hide #-}
 
 -- |
--- Copyright   : (C) 2021 Edward Kmett,
+-- Copyright   : (C) 2021-2023 Edward Kmett,
 -- License     : BSD-2-Clause OR Apache-2.0
 -- Maintainer  : Edward Kmett <ekmett@gmail.com>
 -- Stability   : provisional
@@ -207,14 +207,13 @@ pattern IntFin i <- (toFin -> Just i) where
   IntFin x = fromFin x
 
 data Fin' (n :: Nat) where
-  FZ'      :: Fin' (S n)
-  FS'      :: Fin n -> Fin' (S n)
+  FZ' :: Fin' (S n)
+  FS' :: Fin n -> Fin' (S n)
 
 upFin :: Fin n -> Fin' n
 upFin (UnsafeFin 0) = unsafeCoerce FZ'
 upFin (UnsafeFin n) = unsafeCoerce $ FS' $ UnsafeFin (n-1)
 {-# inline[0] upFin #-}
-
 
 {-
 knownPred :: forall n r. KnownNat (S n) => (KnownNat n => r) -> r

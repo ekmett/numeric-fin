@@ -1,7 +1,7 @@
 {-# Language Trustworthy #-}
 {-# Language PatternSynonyms #-}
 
--- Copyright   : (C) 2021 Edward Kmett,
+-- Copyright   : (C) 2021-2023 Edward Kmett,
 -- License     : BSD-2-Clause OR Apache-2.0
 -- Maintainer  : Edward Kmett <ekmett@gmail.com>
 -- Stability   : provisional
